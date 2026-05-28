@@ -19,3 +19,19 @@ The system actively monitors video streams and executes **7 core behavioral and 
 ---
 
 ## ⚙️ System Architecture & Workflow
+[ Camera Feed ] ──> [ Night Vision Scaling ] ──> [ YOLOv8 Object Parsing ]
+│
+▼
+[ Evidence / Photo Log ] <── [ Alarm Trigger ] <── [ Multi-Feature Logic Analytics ]
+(Winsound Beep)      (Intrusion, Speed, Fight, Loitering)
+
+---
+
+## 🚀 Getting Started
+
+### 📋 Prerequisites
+
+Ensure you have Python 3.8+ installed along with the required dependencies:
+
+```bash
+pip install ultralytics opencv-python numpy
